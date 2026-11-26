@@ -1,7 +1,7 @@
 {
   "name": "popup-book-constraints",
   "version": "1.0.0",
-  "description": "My Remotion video",
+  "description": "A frame-driven paper pop-up book reconstruction in Remotion, for Motionface recording ad1b3f0a.",
   "repository": {},
   "license": "UNLICENSED",
   "engines": {
@@ -9,7 +9,9 @@
   },
   "private": true,
   "dependencies": {
+    "@fontsource/noto-serif-sc": "5.2.9",
     "@remotion/cli": "4.0.547",
+    "@remotion/media": "4.0.547",
     "react": "19.3.1",
     "react-dom": "19.3.1",
     "remotion": "4.0.547"
@@ -26,7 +28,11 @@
     "dev": "remotion studio",
     "build": "remotion bundle",
     "upgrade": "remotion upgrade",
-    "lint": "eslint src && tsc"
+    "lint": "eslint src && tsc",
+    "render": "remotion render PopupBook out/popup-book.mp4",
+    "render:preview": "remotion render PopupBook out/preview.mp4 --scale=0.5",
+    "still": "remotion still PopupBook out/poster.png --frame=735",
+    "typecheck": "tsc --noEmit"
   },
   "allowScripts": {
     "esbuild": false
