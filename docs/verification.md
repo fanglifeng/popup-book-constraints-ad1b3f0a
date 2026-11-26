@@ -16,3 +16,15 @@
 - `npm run build` 已通过。
 - 完整输出按每 2 秒抽帧，检查中段立体分镜、拉远比较、合书散纸及最后展开。
 
+
+## GitHub 与绑定
+
+- 公开仓库：https://github.com/fanglifeng/popup-book-constraints-ad1b3f0a
+- GitHub CLI 验证仓库 visibility 为 PUBLIC，默认分支 main。
+- 首次推送后 `git rev-parse HEAD` 与 `git ls-remote origin refs/heads/main` 一致。
+- 绑定 API 返回 HTTP 200。
+- 响应 recording_id：`ad1b3f0a-1770-4743-a28f-9a7ad9c378af`。
+- 响应 github_url：`https://github.com/fanglifeng/popup-book-constraints-ad1b3f0a`。
+- 两字段均通过严格相等验证。没有调用删除接口。
+- 提交前凭证及签名 URL 扫描通过。
+- Remotion Studio 成功加载第 735 帧；`get_current_error` 返回 null。
